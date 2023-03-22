@@ -4,7 +4,7 @@ import './index.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import BookList from './components/Booklist/Booklist';
+import BookList from './components/Booklist/BookList';
 import BookDetails from './components/BookDetails/BookDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
