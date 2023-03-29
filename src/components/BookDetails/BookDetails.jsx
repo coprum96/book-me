@@ -13,7 +13,7 @@ const BookDetails = () => {
   const [loading, setLoading] = useState(false);
   const [book, setBook] = useState(null);
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     setLoading(true);
     async function getBookDetails(){
@@ -44,6 +44,8 @@ const BookDetails = () => {
     }
     getBookDetails();
   }, [id]);
+
+  if(loading) return <Loader />;
 
   return (
     <section className='book-details'>
@@ -82,4 +84,5 @@ const BookDetails = () => {
     </section>
   )
 }
-export default BookDetails;
+
+export default BookDetails
